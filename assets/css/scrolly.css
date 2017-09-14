@@ -1,0 +1,1856 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bgbg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+}
+
+.bgbg0 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: #3871C1;
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+  background-color: #3871C1;
+
+  text-decoration: underline;
+}
+
+.ring {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+}
+
+div.tooltip {
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
+  padding: 4px 6px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+  z-index: 9999999999;
+  display: inline-block;
+  position: fixed;
+  right: .6em;
+  top: .6em;
+  cursor: pointer;
+}
+
+#output {
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #000;
+  float: left;
+  display: block;
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  padding: .3em;
+  background-color: #fff;
+  opacity: 1;
+  max-width: 25%;
+}
+
+
+#pmnglogo {
+  top: .5em;
+  left: 1em;
+  display: block;
+  position: fixed;
+  z-index: 9999999;
+  background: none;
+  cursor: pointer;
+ }
+
+#scrollimg {
+  position: fixed;
+  color: #fff;
+  display: block;
+  bottom: .3em;
+  z-index: 9999999;
+  line-height: 1.6em;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+
+  left: 50%;
+  top: 90%;
+}
+
+#containerMore {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  position: fixed;
+  z-index: -333;
+  top: 10%;
+  margin: 0;
+  padding: 0;
+  left: 30%;
+  float: right;
+}
+
+section > p:first-child:first-letter {
+  color: #000;
+  display: inline;
+  float: left;
+  font-size: 4.4em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 0.8em;
+  margin: 0.03em 0.04em 0 0;
+  text-transform: uppercase;
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  transition: 1s opacity;
+  display: block;
+}
+
+.videobig {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  transition: 1s opacity;
+  display: block;
+}
+
+video#bgvid02 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  transition: 1s opacity;
+  display: block;
+}
+
+.stopfade {
+  opacity: .5;
+}
+
+#follow {
+  background: none;
+}
+
+.grey {
+  color: #777;
+}
+#play {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3871C1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 99999998;
+
+  cursor: pointer;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99999999;
+  width: 250px;
+  height: 250px;
+  margin: -125px 0 0 -125px;
+  border: 16px solid #fff;
+  border-radius: 0;
+  border-top: 16px solid #efefef;
+background-color:#3871C1;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: infinite;
+
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#intro {
+  font-family: 'Trocchi', serif;
+  position: absolute;
+  display: block;
+  width: 36%;
+}
+
+#intro > p:first-child:first-letter {
+  color: #fff;
+  display: inline;
+  float: left;
+  font-size: 5em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 0.7em;
+  margin: 0.03em 0.04em 0 0;
+  text-transform: uppercase;
+}
+
+#introB {
+  font-family: 'Trocchi', serif;
+  position: absolute;
+  display: block;
+}
+
+#introB > p:first-child:first-letter {
+  color: #f000f0;
+  display: inline;
+  float: left;
+  font-size: 5.2em;
+  font-family: 'Vast Shadow', sans-serif;
+  line-height: 0.8em;
+  margin: 0.03em 0.04em 0 0;
+  text-transform: uppercase;
+}
+
+#container {
+  z-index: 0;
+}
+#vidCanvas {
+  display: none;
+  z-index: 0;
+}
+
+#inputCanvas {
+  display: none;
+  z-index: 0;
+}
+#inputVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-transform: scaleX(-1);
+}
+#overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-transform: scaleX(-1);
+}
+#selector {
+  position: absolute;
+  top: 5em;
+  left: 1em;
+  color: white;
+  z-index: 9999;
+}
+
+#plotD {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+#plot {
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.land {
+  fill: rgb(255, 222, 0);
+  stroke-opacity: 1;
+}
+
+.countries path {
+  stroke: rgb(80, 64, 39);
+  stroke-linejoin: round;
+  stroke-width: .5;
+  fill: rgb(117, 87, 57);
+  opacity: .1;
+}
+
+.countries path:hover {
+  fill-opacity: .1;
+  stroke-width: 1;
+  opacity: 1;
+}
+
+.graticule {
+  fill: none;
+  stroke: black;
+  stroke-width: .5;
+  opacity: .2;
+}
+
+.labels {
+  font: 1em 'Oswald', sans-serif;
+  fill: white;
+  opacity: .8;
+}
+
+.noclicks {
+  pointer-events: none;
+}
+
+.point {
+  opacity: .6;
+}
+
+path {
+  fill: #ddd;
+  fill-opacity: .8;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+line {
+  stroke: #999;
+}
+
+#graphic {
+  padding-top: 0;
+  font-family: "Oswald",
+    "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  height: auto;
+}
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+path.slice {
+  stroke-width: 2px;
+}
+
+polyline {
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+#logobar {
+  position: fixed;
+  color: #3871C1;
+  display: block;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  line-height: 1.6em;
+  left: 0;
+  border-top: 0;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: #fff;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-size: .7em;
+  font-weight: 800;
+  text-align: left;
+   cursor: pointer;
+    height: 40px;
+
+}
+
+
+#topbar0 {
+  position: fixed;
+  color: #000;
+  display: inline-block;
+  top: 0px;
+  z-index: 9990;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 5.1em;
+  padding-right: 3em;
+  width: 100%;
+  line-height: 1.3em;
+  border-top: 1px solid #000;
+
+  text-transform: uppercase;
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .tagline {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .tagline {
+    display: none;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .tagline {
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  #sections {
+    position: absolute;
+    color: #000;
+
+    top: 0px;
+    z-index: 10;
+
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 260px;
+    overflow: visible;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #sections {
+    position: absolute;
+    color: #000;
+
+    top: 0px;
+    z-index: 10;
+
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 260px;
+    overflow: visible;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  #sections {
+    position: absolute;
+    color: #000;
+
+    top: 0px;
+    z-index: 10;
+
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.1em;
+    width: 100%;
+    min-width: 260px;
+    overflow: visible;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .step {
+    margin-bottom: 96vh;
+    font-family: "HelveticaNeue",
+      "Helvetica Neue",
+      'TeXGyreHerosRegular',
+      "Helvetica",
+      "Tahoma",
+      "Geneva",
+      "Arial",
+      sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #fff;
+    height: 100%;
+    color: #000;
+    margin-left: 0;
+    padding: 0;
+    z-index: 1;
+    overflow: visible;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+ }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .step {
+    margin-bottom: 96vh;
+    font-family: "HelveticaNeue",
+      "Helvetica Neue",
+      'TeXGyreHerosRegular',
+      "Helvetica",
+      "Tahoma",
+      "Geneva",
+      "Arial",
+      sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #fff;
+    height: 100%;
+    color: #000;
+    margin-left: 0;
+    padding: 0;
+    z-index: 1;
+    overflow: visible;
+   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .step {
+    margin-bottom: 96vh;
+    font-family: "HelveticaNeue",
+      "Helvetica Neue",
+      'TeXGyreHerosRegular',
+      "Helvetica",
+      "Tahoma",
+      "Geneva",
+      "Arial",
+      sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #fff;
+    height: 100%;
+    color: #000;
+    margin-left: 0;
+    padding: 0;
+    z-index: 1;
+    overflow: visible;
+   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+}
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+
+#logoOpener {
+
+    background-color: #fff;
+
+top: 0;
+left: 0;
+  text-transform: none !important;
+  color: #3871C1;
+  font-size: 1.4em;
+display: inline-block;
+height: 119px;
+   box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    font-family: "HelveticaNeue",
+      "Helvetica Neue",
+      'TeXGyreHerosRegular',
+      "Helvetica",
+      "Tahoma",
+      "Geneva",
+      "Arial",
+      sans-serif;
+  font-weight: 400;
+position: fixed;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: .5em;
+  text-align: center;
+  line-height: 1em;
+   width: 30%;
+   z-index: 9999999;
+ }
+ 
+ 
+ 
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+
+#logoOpener {
+
+    background-color: #fff;
+height: 139px;
+
+top: 0;
+left: 0;
+  text-transform: none !important;
+  color: #3871C1;
+  font-size: 1.4em;
+display: inline-block;
+height: 139px;
+   box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    font-family: "HelveticaNeue",
+      "Helvetica Neue",
+      'TeXGyreHerosRegular',
+      "Helvetica",
+      "Tahoma",
+      "Geneva",
+      "Arial",
+      sans-serif;
+  font-weight: 400;
+position: fixed;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: .5em;
+  text-align: center;
+  line-height: 1em;
+   width: 30%;
+   z-index: 9999999;
+ }
+ 
+ 
+ 
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
+#logoOpener {
+
+    background-color: #fff;
+
+top: 0;
+left: 0;
+  text-transform: none !important;
+  color: #3871C1;
+  font-size: 1.4em;
+display: inline-block;
+height: 139px;
+   box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    font-family: "HelveticaNeue",
+      "Helvetica Neue",
+      'TeXGyreHerosRegular',
+      "Helvetica",
+      "Tahoma",
+      "Geneva",
+      "Arial",
+      sans-serif;
+  font-weight: 400;
+position: fixed;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: .5em;
+  text-align: center;
+  line-height: 1em;
+   width: 25%;
+   z-index: 9999999;
+ }
+ 
+ 
+ 
+
+
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+#toc {
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 800;
+  font-size: 1.1em;
+  color: #000;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 12vh;
+  padding-bottom: .3em;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  width: 100%;
+  min-width: 280px;
+background-color: #fff;
+  z-index: 99995;
+  
+ 
+
+
+}
+
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+ 
+
+#toc {
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 800;
+  font-size: 1.1em;
+  color: #000;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 12vh;
+  padding-bottom: .3em;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  width: 100%;
+  min-width: 280px;
+background-color: #fff;
+  z-index: 99998;
+  
+ }
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+#toc {
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 800;
+  font-size: 1.1em;
+  color: #000;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 12vh;
+  padding-bottom: .3em;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  width: 60%;
+  min-width: 400px;
+background-color: #fff;
+  z-index: 99998;
+  
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {#logoOpener img {
+  margin-top: 1em;
+  margin-bottom: 1.6em;
+
+}
+
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+ 
+#logoOpener img {
+  margin-top: 1em;
+  margin-bottom: .9em;
+
+}
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {#logoOpener img {
+  margin-top: 1em;
+  margin-bottom: .6em;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+.topbar {
+  position: fixed;
+  display: block;
+  top: 39px;
+  z-index: 9990;
+  width: 100%;
+  line-height: 1em;
+  left: 0;
+  border-top: 1px solid #000;
+  text-transform: uppercase;
+   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  margin: 0 auto;
+  padding-left: 92px;
+  padding-right: 10px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  color: #fff;
+}
+
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+ 
+
+.topbar {
+  position: fixed;
+  display: block;
+  top: 39px;
+  z-index: 9990;
+  width: 100%;
+  line-height: 1em;
+  left: 0;
+  border-top: 1px solid #000;
+  text-transform: uppercase;
+   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  margin: 0 auto;
+  padding-left: 92px;
+  padding-right: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fff;
+}
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+.topbar {
+  position: fixed;
+  display: block;
+  top: 39px;
+  z-index: 9990;
+  width: 100%;
+  line-height: 1em;
+  left: 0;
+  border-top: 1px solid #000;
+  text-transform: uppercase;
+   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  margin: 0 auto;
+  padding-left: 92px;
+  padding-right: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fff;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+
+
+.icon {
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+  height: 38px;
+  left: 40px;
+  position: fixed;
+  top: 46px;
+  width: 38px;
+  z-index: 99999;
+}
+
+
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+ 
+
+
+
+
+.icon {
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+  height: 38px;
+  left: 40px;
+  position: fixed;
+  top: 46px;
+  width: 38px;
+  z-index: 99999;
+}
+
+
+
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
+
+.icon {
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+  height: 38px;
+  left: 40px;
+  position: fixed;
+  top: 46px;
+  width: 38px;
+  z-index: 99999;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+#titleOpener {
+  background-color: rgba(56, 113, 193, .9);
+  display: inline-block;
+top: 0;
+left: 30%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 32px;
+vertical-align: bottom;
+   box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 900;
+height: 119px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 12px;
+  text-align: center;
+  line-height: 1em;
+  position: relative;
+  width: 70%;
+  z-index: 99999999;
+}
+
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+#titleOpener {
+  background-color: rgba(56, 113, 193, .9);
+  display: inline-block;
+top: 0;
+left: 30%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 48px;
+   box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 900;
+height: 139px;
+vertical-align: bottom;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 14px;
+  text-align: center;
+  line-height: 1em;
+  position: relative;
+  width: 70%;
+  z-index: 99999999;
+}
+
+
+
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+#titleOpener {
+  background-color: rgba(56, 113, 193, .9);
+  display: inline-block;
+top: 0;
+left: 25%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 54px;
+   box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  font-family: "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 900;
+height: 139px;
+vertical-align: bottom;
+
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 18px;
+  text-align: center;
+  line-height: 1.6em;
+  position: relative;
+  width: 75%;
+  z-index: 99999999;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stepB {
+  padding-top: 12em;
+  margin-bottom: 8em;
+  font-family: 'Trocchi', serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+
+#sections .title {
+ /* text-transform: uppercase; */
+
+  font-size: 1.3em;
+
+  font-family:
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-weight: 800;
+
+  margin-bottom: .1em;
+
+  line-height: 1.3em;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+
+.subline {
+ /* text-transform: uppercase; */
+   color: #fff;
+
+  font-size: 12px;
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+ line-height: 14px;
+
+
+  font-weight: 200;
+vertical-align: top;
+ 
+ 
+   text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+ 
+}
+
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+ 
+
+
+
+.subline {
+ /* text-transform: uppercase; */
+   color: #fff;
+
+  font-size: 13px;
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+
+
+  font-weight: 200;
+
+  line-height: 14px;   margin:0;
+   text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+ 
+}
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
+.subline {
+ /* text-transform: uppercase; */
+   color: #fff;
+
+  font-size: 14px;
+
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+
+
+  font-weight: 200;
+
+ line-height: 1px;
+ 
+   margin:0;
+   text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+ 
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.divider {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 250px;
+  height: 1em;
+  margin-bottom: .3em;
+  margin-top: .3em;
+}
+
+#sections .titleB {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+
+  font-size: 3.4em;
+  margin-bottom: .3em;
+  color: #fff;
+  line-height: 1em;
+  font-style: normal;
+}
+
+#extra-space {
+  height: 0;
+}
+
+#vis {
+  display: none;
+  visibility: hidden;
+  top: 0;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  z-index: 9999990;
+  padding: 0;
+  /* height: 600px; */
+  /* width: 600px; */
+  /* background-color: #ddd; */
+}
+
+#vis .title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  top: 6em;
+  font-size: 14em;
+  text-anchor: middle;
+  color: #000;
+  font-style: normal;
+  display: none;
+}
+
+#vis .sub-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 8em;
+  color: #fff;
+  text-anchor: middle;
+  font-style: normal;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.highlight {
+  fill: #ffd200;
+}
+
+.line {
+  stroke: white;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.lineX {
+  stroke: white;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.bar:hover {
+  fill: white;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.node circle {
+  cursor: pointer;
+  /*stroke: #3182bd;
+///stroke-width: 1.5px; */
+}
+
+.node text {
+  font: .8em "HelveticaNeue-Light", sans-serif;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+line.link {
+  fill: none;
+  stroke: #D6D6D6;
+  stroke-width: .5px;
+}
+
+line.linkX {
+  fill: none;
+  stroke: #D6D6D6;
+  stroke-width: .5px;
+}
+
+.bar-text {
+  font: 6em "HelveticaNeue-Light", sans-serif;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+////////////////////////////////////////////////////////////
+// Background Images
+////////////////////////////////////////////////////////////
+
+.js-background-image {
+  position: relative;
+}
+picture.js-background-image {
+  display: block;
+}
+.js-background-image img {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.no-objectfit .js-background-image {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+}
+.no-objectfit .js-background-image img {
+  display: none;
+}
+
+
+.material-icons {
+
+  font-size: 18px !important;
+}
+
+.mdc-toolbar__row {
+
+  height: 40px !important;
+}
+
+.mdc-toolbar a {
+
+color: #3871C1 !important;
+
+}
+
+.mdc-toolbar a:hover {
+
+color: #fff !important;
+
+}
+
+
+.mdc-toolbar__icon--menu {
+
+padding: 10px 12px !important;
+
+}
+
+.mdc-toolbar__section--align-end{
+
+height: 85px !important;  
+}
+
+
+.mdc-temporary-drawer
+{
+
+z-index: 11 !important;
+
+}
+
+.mdc-toolbar__icon--menu {
+
+color: #3871C1 !important;
+
+}
+
+
+.mdc-toolbar__title {
+
+align-self: auto !important;
+font-size: 100% !important;
+
+}
+
+
+.UtilNav-social-icon {
+    display: block;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    height: 36px;
+    color:#3871C2;
+
+}
+
+
+
+.mdc-temporary-drawer {
+
+
+
+  z-index: 999999999999999999 !important;
+}
+
+
+
+
+.social-icon {
+display: inline-block;
+margin-right: 9px;
+  margin-top: 12px;
+}
+
+
+.example-dotted ul li {
+margin-bottom: 12px;
+
+}
+
+
+
+  .opening {
+ font-style: normal;
+font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #fff;
+    color: #000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+
+.opening > p:first-child:first-letter {
+
+
+  color: rgba(56, 113, 193, .9);
+  display: inline;
+  float: left;
+  font-size: 5.5em;
+ font-style: normal;
+font-weight: 700;
+  line-height: 0.7em;
+  margin: 0.03em 0.04em 0 0;
+  text-transform: uppercase;
+}
+

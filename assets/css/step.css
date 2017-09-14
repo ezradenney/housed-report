@@ -1,0 +1,486 @@
+#sections .step:first-child .bgbg {
+z-index: 0;
+ transition: none;
+-webkit-transition:none;
+
+ }
+
+.step {
+
+background-color: #fff;
+ transition: all .01s ease;
+-webkit-transition:all .01s ease;
+
+ }
+
+
+ /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+ .step-content {
+/*max-width: 800px; */
+width:100%;
+margin: 0 auto 20vh;
+ background-color: #fff;
+position: relative;
+padding: 12px 22px 12px 40px;
+
+z-index: 2;
+}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+ .step-content {
+/*max-width: 800px; */
+width:100%;
+margin: 0 auto 20vh;
+ background-color: #fff;
+position: relative;
+padding: 12px 40px 12px 40px;
+
+z-index: 2;
+}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+.step-content {
+/*max-width: 800px; */
+width:100%;
+margin: 0 auto 25vh;
+ background-color: #fff;
+position: relative;
+padding: 12px 72px 12px 92px;
+
+z-index: 2;
+}
+}
+
+#openerimg {
+ z-index: 0;
+}
+
+.wrap {
+ margin: 20px auto 20px;
+width: 100%;
+text-align:center;
+height: auto;
+
+}.imgwrapperA { 
+width: 100%;/* % of width */
+padding-top: 75%; /* the % of padding will calculate by width */
+position:relative; /* as it childern's(img here) position's anchor */ 
+border: 0; /* just to illustrate margin */
+display: inline-block;
+}
+
+
+.imgwrapperB { 
+width: 100%;/* % of width */
+padding-top: 50%; /* the % of padding will calculate by width */
+position:relative; /* as it childern's(img here) position's anchor */ 
+border: 0; /* just to illustrate margin */
+display: inline-block;
+}
+.imgwrapperC { 
+width: 100%;/* % of width */
+padding-top: 33%; /* the % of padding will calculate by width */
+position:relative; /* as it childern's(img here) position's anchor */ 
+border: 0; /* just to illustrate margin */
+display: inline-block;
+}
+
+
+.imgwrapperD { 
+width: 100%;/* % of width */
+padding-top: 100%; /* the % of padding will calculate by width */
+position:relative; /* as it childern's(img here) position's anchor */ 
+border: 0; /* just to illustrate margin */
+display: inline-block;
+}
+
+
+.imgwrapperE { 
+width: 100%;/* % of width */
+padding-top: 56.25%; /* the % of padding will calculate by width */
+position:relative; /* as it childern's(img here) position's anchor */ 
+border: 0; /* just to illustrate margin */
+display: inline-block;
+}.imgwrapperF { 
+width: 100%;/* % of width */
+padding-top: 46.25%; /* the % of padding will calculate by width */
+position:relative; /* as it childern's(img here) position's anchor */ 
+border: 0; /* just to illustrate margin */
+display: inline-block;
+}
+
+.reportimg {
+/* make the image inside the padding space */
+position:absolute;
+top:0;
+bottom:0; 
+left:0; 
+right:0;
+/* make sure the image will not over the division */
+max-height:100%;
+max-width:100%;
+/* center the image */
+display:block; 
+margin: auto;
+
+
+ }
+ .full img {
+width: 90%;
+height: 90%;
+ position: relative;
+ 
+}
+
+/* Aspect ratio trick */
+.aspect {
+position: relative;
+}
+
+/* This padding preserve the aspect ratio */
+.aspect:before {
+content: '';
+display: block;
+padding-top: calc(100% * 140/596);/* You could also manually calculate the percentage */
+}
+
+.aspect img {
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+.example {
+-webkit-columns: 2 350px;
+-moz-columns: 2 350px;
+columns: 2 350px;
+-webkit-column-gap: 5em;
+-moz-column-gap: 5em;
+column-gap: 5em;
+-webkit-column-rule-width: 1px;
+-moz-column-rule-width: 1px;
+column-rule-width: 1px;
+-webkit-column-rule-color: #828282;
+-moz-column-rule-color: #828282;
+column-rule-color: #828282;
+margin: 2em auto 2em;
+}
+
+.example-dotted {
+-webkit-column-rule-style: dotted;
+-moz-column-rule-style: dotted;
+column-rule-style: dotted;
+}
+ul {
+
+margin-bottom:1em;
+
+}
+
+
+h3 {
+
+padding: 0;
+font-family:
+"HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;
+line-height:1.3em;
+padding-bottom: .3em;
+font-weight: 800;
+border-bottom: thin solid;
+margin-top:0;
+margin-bottom:.6em;
+top:0;
+
+
+}h3.prog {
+color:#3871C1;
+ }
+
+
+h3.staff {
+color:#379633;
+}
+
+
+h3.part {
+color:#800AD6;
+}
+
+#container-0 {
+/*max-width: 800px; */
+
+background-color:rgba(56, 113, 193,.9);
+
+}
+#container-1 {
+/*max-width: 800px; */
+background-color:rgba(55, 150, 51,.9);
+
+
+}
+
+
+#container-2 {
+/*max-width: 800px;
+*/
+background-color:rgba(56, 113, 193,.9);
+}
+
+#container-3 {
+/*max-width: 800px;background-color:rgba(128, 10, 214,.9);
+ */
+ background-color:rgba(56, 113, 193,.9);
+
+ }
+
+#container-4 {
+/*max-width: 800px; background-color:#001557;
+ */
+
+ background-color:rgba(56, 113, 193,.9);
+
+ }
+
+#container-5 {
+/*max-width: 800px;background-color:#AF202D;
+*/
+background-color:rgba(56, 113, 193,.9);
+
+ }#container-6 {
+/*max-width: 800px;
+*/
+background-color:rgba(55, 150, 51,.9);
+}#container-7 {
+/*max-width: 800px;
+*/
+background-color:rgba(55, 150, 51,.9);
+}
+
+
+#container-8 {
+/*max-width: 800px; 
+*/
+background-color:rgba(128, 10, 214,.9);
+}
+
+#container-9 {
+/*max-width: 800px; 
+*/
+background-color:rgba(175, 32, 45,.9);
+}
+
+#container-10 {
+/*max-width: 800px; 
+*/
+background-color:rgba(56, 113, 193,.9);
+}#container-11 {
+/*max-width: 800px; 
+*/
+background-color:rgba(56, 113, 193,.9);
+}#container-12 {
+/*max-width: 800px; 
+*/
+background-color:rgba(55, 150, 51,.9);
+}#container-13 {
+/*max-width: 800px; 
+*/
+background-color:rgba(128, 10, 214,.9);
+}#container-14 {
+/*max-width: 800px; 
+*/
+background-color:rgba(175, 32, 45,.9);
+}#container-15 {
+/*max-width: 800px; 
+*/
+background-color:rgba(175, 32, 45,.9);
+}#container-16 {
+/*max-width: 800px; 
+*/
+background-color:rgba(56, 113, 193,.9);
+}#container-17 {
+/*max-width: 800px; 
+*/
+background-color:rgba(55, 150, 51,.9);
+}#container-18 {
+/*max-width: 800px; 
+*/
+background-color:rgba(128, 10, 214,.9);
+}
+#container-19 {
+/*max-width: 800px; 
+*/
+background-color:rgba(175, 32, 45,.9);
+}
+
+
+#container-20 {
+/*max-width: 800px; 
+*/
+background-color:rgba(56, 113, 193,.9);
+}
+
+
+#container-21 {
+/*max-width: 800px; 
+*/
+background-color:rgba(56, 113, 193,.9);
+}
+
+
+#container-22 {
+/*max-width: 800px; 
+*/
+background-color:rgba(56, 113, 193,.9);
+}blockquote {
+font-family: "HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;
+text-transform: uppercase;
+font-size: 18px;
+
+width: 100%;
+margin: 0.25em 0;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #001557;
+border-left: none;
+}
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #001557;
+}
+
+blockquote cite {
+color: #001557;
+font-size: 14px;
+display: block;
+text-align: right;
+float: right;
+margin-top: 5px;
+}
+
+
+.bigblues {
+color:#3871C1;
+font-weight:800;
+text-transform: uppercase;
+
+}
+
+.tagblues {
+color:#fff;
+font-weight:800;
+text-transform: uppercase;
+background:none;
+background-color:none;
+font-size:.7em;
+max-width:400px;
+bottom:3vh;
+left:3vw;
+position:fixed;
+display:block;
+z-index:999999999999;
+text-shadow: 1px 1px 1px #000;
+
+}
+
+.imgcontainer {
+
+display: block;
+width: 100%;
+text-align: center;
+margin-bottom: 6px;
+}
+
+.imgcontainerB {
+
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-bottom: .3em;
+margin-top: 1em;
+}
+
+
+#container-22 {
+
+display: none;
+
+}
+
+#titleCloser {
+
+background-color: rgba(56, 113, 193, .9);
+padding:42px;
+
+left: 0;
+text-transform: none !important;
+color: #fff;
+font-size: 1.6em;
+display: none;
+
+font-family: "HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;
+font-weight: 400;
+
+margin-bottom: 0;
+top: 1.8em;
+
+
+text-align: left;
+line-height: 1.3em;
+position: fixed;
+width: 100%;
+z-index: 99997;
+}
+#titleCloser img {
+margin-right: 1em;
+min-width:150px;
+}
+
+ 
+ 
+
+
+.introimg {
+
+padding: .3em;
+
+
+}
+
