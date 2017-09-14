@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="no-js objectfit object-fit">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+              ___          ___         ___          ___          ___          ___      ___
+      ___    /__/\        /  /\       /  /\        /  /\        /  /\        /  /\    /  /\        ___
+     /  /\   \  \:\      /  /::\     /  /:/_      /  /:/_      /  /:/_      /  /::\  /  /::\      /  /\
+    /  /:/    \__\:\    /  /:/\:\   /  /:/ /\    /  /:/ /\    /  /:/ /\    /  /:/\:\/  /:/\:\    /  /:/
+   /  /:/ ___ /  /::\  /  /:/~/:/  /  /:/ /:/_  /  /:/ /:/_  /  /:/ /::\  /  /:/~/:/  /:/  \:\  /  /:/
+  /  /::\/__/\  /:/\:\/__/:/ /:/__/__/:/ /:/ /\/__/:/ /:/ /\/__/:/ /:/\:\/__/:/ /:/__/:/ \__\:\/  /::\
+ /__/:/\:\  \:\/:/__\/\  \:\/:::::|  \:\/:/ /:/\  \:\/:/ /:/\  \:\/:/~/:/\  \:\/:/\  \:\ /  /:/__/:/\:\
+ \__\/  \:\  \::/      \  \::/~~~~ \  \::/ /:/  \  \::/ /:/  \  \::/ /:/  \  \::/  \  \:\  /:/\__\/  \:\
+      \  \:\  \:\       \  \:\      \  \:\/:/    \  \:\/:/    \__\/ /:/    \  \:\   \  \:\/:/      \  \:\
+       \__\/\  \:\       \  \:\      \  \::/      \  \::/       /__/:/      \  \:\   \  \::/        \__\/
+             \__\/        \__\/       \__\/        \__\/        \__\/        \__\/    \__\/
+
+
+
+      This framework and functionality is based on this: https://github.com/vlandham/scroll_demo
+      For a full rundown of the theory behind it, see: http://vallandingham.me/scroller.html
+      We have tweaked to make it populoate more dynamically, and include interactive goodies like
+      WebGL, SVG, etc. in the <vis> div created for the original interactive it was intended for.
+
+     |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||| Facebook Sharing Content |||||||||||||||||||||||||||||||||||| -->
+
+  <meta property="og:title" content="HOUSE|ED – Quality Standards for Expanded Learning in Public and Affordable Housing">
+  <meta property="og:site_name" content="Partnership for Children & Youth">
+  <meta property="og:url" content="http://partnerforchildren.org/housed-quality-standards/">
+  <meta property="og:description" content="PCY has been a pioneer in expanded learning for the past 15 years, including a focus on creating educational opportunities in public and affordable housing over the last six years, through our HousED initiative. In 2015, we brought together a diverse group of housing agencies and educators to meet an ambitious goal: establish standards for quality expanded learning programs that speak to the unique needs and challenges of providing services to youth in public and affordable housing communities.">
+  <meta property="fb:app_id" content="*** [ Your FB App ID Here ] ***">
+  <meta property="og:type" content="website"> 
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- ||||||||||||||| Twitter Sharing Content |||||||||||||||||||||| -->
+
+<meta name="twitter:card" content="Standards for quality expanded learning programs that provide services to youth in public and affordable housing communities." />
+  <meta name="twitter:site" content="@partnr4childrn" />
+  <meta name="twitter:creator" content="@partnr4childrn" />
+  <meta property="og:image" content="http://partnerforchildren.org/wp-content/themes/pcy/resize.php?src=http://partnerforchildren.org/wp-content/uploads/2016/10/picture4.jpg&w=1200&h=470" />
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <meta name="Description" content="PCY has been a pioneer in expanded learning for the past 15 years, including a focus on creating educational opportunities in public and affordable housing over the last six years, through our HousED initiative. In 2015, we brought together a diverse group of housing agencies and educators to meet an ambitious goal: establish standards for quality expanded learning programs that speak to the unique needs and challenges of providing services to youth in public and affordable housing communities.">
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <title>HOUSE|ED – Quality Standards for Expanded Learning in Public and Affordable Housing</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/scrolly.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/step.css">
+    <script src="assets/css/demo-styles.css.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.min.js"></script>
+  <script type="text/javascript" src="assets/js/content.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="assets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body>
+
+
+   <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||| SITE FURNITURE |||||||||||||||||||||||||||| -->
+
+<a name="topski"></a>
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||  LOADER |||||||||||||||||||||||||||||||||||| -->
+
+
+  <div id="play">
+            <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--reversed" data-buffer="true" style="top:50%; ">
+              <div class="mdc-linear-progress__buffering-dots"></div>
+              <div class="mdc-linear-progress__buffer"></div>
+              <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                <span class="mdc-linear-progress__bar-inner"></span>
+              </div>
+              <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                <span class="mdc-linear-progress__bar-inner"></span>
+              </div>
+            </div>
+  </div>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| BOTTOM LEFT DIV ||||||||||||||||||||||||||||||||| -->
+  <div id="output">
+  </div>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| TOOLBAR  |||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+    <div class="mdc-toolbar mdc-toolbar--fixed" style="background-color: #fff;" id="logobar">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <button class="demo-menu material-icons mdc-toolbar__icon--menu">menu</button>
+<a href="#topski"><img src="assets/images/housed.png" border="0" alt="House ED" style="height:33px;margin-top: 3px;background-color:#fff !important; "></a>          
+<span class="mdc-toolbar__title">Quality Standards for Expanded Learning in Public and Affordable Housing</span>
+
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+          <a href="http://partnerforchildren.org/wp-content/uploads/2017/02/house-ed-standardsguide-final.pdf" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
+          <div class="mdc-menu-anchor">
+          <a class="material-icons mdc-toolbar__icon toggle" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
+          <div class="mdc-simple-menu" tabindex="-1" id="demo-menu">
+            <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" style="transform: scale(1, 1);">
+              <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.069s;"><a href="//www.facebook.com/PartnerForChildren/">Facebook</a></li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.124s;"><a href="//twitter.com/partnr4childrn">Twitter</a></li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.179s;"><a href="//www.youtube.com/user/PartnerChildrenYouth">YouTube</a></li>
+              <li class="mdc-list-divider" role="separator"></li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.236s;"><a href="house-ed-standardsguide.pdf">Download</a></li>
+            </ul>
+          </div>
+          </div>
+        
+
+        </section>
+      </div>
+    </div>
+    <aside class="mdc-temporary-drawer">
+      <nav class="mdc-temporary-drawer__drawer">
+        <header class="mdc-temporary-drawer__header">
+          <div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary" style="background-color: #3871C1 !important; ">
+            HousED is an initiative of the Partnership for Children &amp; Youth, working to increase the accessibility and quality of educational supports in public and affordable housing communities as a pathway out of poverty.
+
+          </div>
+        </header>
+        <nav class="mdc-temporary-drawer__content mdc-list-group">
+          <div id="icon-with-text-demo" class="mdc-list">
+
+
+                  <li><a href="#step-0" class="mdc-list-item">INTRODUCTION</a></li>
+        <li><a href="#step-1" class="mdc-list-item">PROGRAMMATIC STANDARDS</a></li>
+        <li><a href="#step-2" class="mdc-list-item">POINT-OF-SERVICE STANDARDS</a></li>
+        <li><a href="#step-3" class="mdc-list-item">RECOMMENDED USES AND EXPANDED LEARNING DEFINITIONS</a></li>
+        <li><a href="#step-4" class="mdc-list-item">CLEAR VISION, MISSION, PURPOSE, AND MANAGEMENT</a></li>
+        <li><a href="#step-5" class="mdc-list-item">CLEAR VISION, MISSION, PURPOSE, AND MANAGEMENT</a></li>
+        <li><a href="#step-6" class="mdc-list-item">CONTINUOUS QUALITY IMPROVEMENT</a></li>
+        <li><a href="#step-7" class="mdc-list-item">CONTINUOUS QUALITY IMPROVEMENT</a></li>
+        <li><a href="#step-8" class="mdc-list-item">QUALITY STAFF</a></li>
+        <li><a href="#step-9" class="mdc-list-item">COLLABORATIVE PARTNERSHIPS</a></li>
+        <li><a href="#step-10" class="mdc-list-item">FAMILY ENGAGEMENT</a></li>
+        <li><a href="#step-11" class="mdc-list-item">FAMILY ENGAGEMENT</a></li>
+        <li><a href="#step-12" class="mdc-list-item">SUSTAINABILITY</a></li>
+        <li><a href="#step-13" class="mdc-list-item">DIVERSITY, ACCESS, AND INCLUSIVITY</a></li>
+        <li><a href="#step-14" class="mdc-list-item">SAFE AND SUPPORTIVE ENVIRONMENT</a></li>
+        <li><a href="#step-15" class="mdc-list-item">SAFE AND SUPPORTIVE ENVIRONMENT</a></li>
+        <li><a href="#step-16" class="mdc-list-item">ACTIVE AND ENGAGED LEARNING</a></li>
+        <li><a href="#step-17" class="mdc-list-item">SKILL BUILDING</a></li>
+        <li><a href="#step-18" class="mdc-list-item">YOUTH VOICE AND LEADERSHIP</a></li>
+        <li><a href="#step-19" class="mdc-list-item">HEALTHY CHOICES AND BEHAVIORS</a></li>
+        <li><a href="#step-20" class="mdc-list-item">WORK GROUP PROCESS</a></li>
+        <li><a href="#step-21" class="mdc-list-item">CREDITS</a></li>
+        <li><a href="#step-22" class="mdc-list-item">CONTACT</a></li>
+
+
+
+ 
+
+          </div>
+        </nav>
+      </nav>
+    </aside>
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| TOP LEFT LOGO ||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| TABLE OF CONTENTS ||||||||||||||||||||||||||||||| -->
+  <div id="toc" data-toggle="toc">
+   </div>
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| This is where the content lives ||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| Main container div |||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| Graphic div is the parent for scrolling ||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| Containers have bgs and top bars |||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- ||||| Section contains steps which are the scrolling text |||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||| add a static title container |||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  <div id="titleCloser">
+    HousED is an initiative of the Partnership for Children &amp; Youth, working to increase the accessibility and quality of educational
+    supports in public and affordable housing communities as a pathway out of poverty.
+  </div>
+
+<div style="top: 0;left: 0;display: inline-block;position: absolute; z-index: 9999999999999999999;">
+<button class="title-menu material-icons mdc-toolbar__icon--menu">menu</button>
+</div>
+
+
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||| mama container||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <div class="container" id="container">
+
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||| container 2 ||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <div id="graphic">
+
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+     <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||| holds the steps/pages|||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+      <div id="sections">
+
+
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||   1st slide |||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| add a static step container ||||||||||||||||||||| -->
+        <!-- |||||||||||| the title slide with scroll prompt |||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+        <!-- ### 0 ### -->
+<section class="step" style="background: none !important; visibility:visible; ">
+  <div id="logoOpener" style="display:inline-block; ">
+    <div class="imgcontainer">
+      <a href="#" style="background-color: none; background: none; "><img src="houseed333.png" width="90%" border="0" alt="HouseED Housing and Education" style="max-width:200px;"></a>
+    </div>
+  </div>
+
+  <div class="tagblues"><!-- <a href="http://partnerforchildren.org/" target="_blank" style="background-color: none; background: none;color:#fff; ">©2017 Partnership for Children &amp; Youth</a> --></div>
+
+    <div class="bgbg js-background-image">
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="assets/images/bkg/1-Cover-large.jpg" media="(min-width: 400px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="assets/images/bkg/1-Cover-small.jpg">
+      </picture>
+    </div>          <div id="titleOpener">QUALITY STANDARDS
+            <div class="subline">for Expanded Learning in Public and Affordable Housing</div>
+          </div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <span id="scrollimg">
+            <a href="#step-0" style="background: none !important; z-index: 9999999; ">
+              <img src="assets/images/scrolldown.png" border="0" alt="Scroll Down For More" style="text-align: center; ">
+            </a>
+          </span>
+        </section>
+
+
+
+
+
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| OUTPUT THE REST OF THE STEPS |||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| FIND THE CONTENT IN content.js |||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||| CALCULATES ARRAY OF TITLES FOR OUTPUT ||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+        <noscript>
+
+ 
+        </noscript>
+
+
+
+
+      </div>
+
+      <!-- |||||||||||| The vis div that holds interactive goodies if there are any |||||| -->
+
+      <div id="vis" style="display:none; "></div>
+
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||| Close container and graphic ||||||||||||||||||||| -->
+
+    </div>
+  </div>
+
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+  <script type="text/javascript" src="assets/js/picturefill.min.js"></script>
+  <script type="text/javascript" src="assets/js/background-picture.js"></script>
+  <script type="text/javascript" src="assets/js/queue.js"></script>
+  <script type="text/javascript" src="assets/js/scroller.js"></script>
+  <script type="text/javascript" src="assets/js/toggle.js"></script>
+  <script type="text/javascript" src="assets/js/preload.js"></script>
+  <script type="text/javascript" src="assets/js/slide.js"></script>
+  <script type="text/javascript" src="assets/js/table-of-contents.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+
+
+  <script src="assets/js/scrolly.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- |||||||||||| Preloader ||||||||||||||||||||||||||||||||||||||| -->
+
+<div class="hidden">
+  <script type="text/javascript">
+ 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+ 
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+        
+
+      }
+
+
+
+images.onload = notify();
+
+      function notify()  {
+
+        setTimeout(function(){ 
+
+          document.getElementById('play').style.display = 'none'; 
+ 
+ 
+        }, 6000);
+       
+}
+
+      preload(
+        "assets/images/bkg/1-Cover-large.jpg",
+        "assets/images/bkg/2-Intro-large.jpg",
+        "assets/images/bkg/4-Rec_Uses-large.jpg",
+        "assets/images/bkg/5-Clear_Vision-large.jpg",
+        "assets/images/bkg/6-Continuous_Quality_Improvement-large.jpg",
+        "assets/images/bkg/8-Collab_Partnerships-large.jpg",
+        "assets/images/bkg/9-Family_Engagement-large.jpg",
+        "assets/images/bkg/10-Sustainability-large.jpg",
+        "assets/images/bkg/11-Diversity_Access_Inclusivity-large.jpg",
+        "assets/images/bkg/12-Safe-and-Supporting-Environment-large.jpg",
+        "assets/images/bkg/13-Active_Engaged_Learning-large.jpg",
+        "assets/images/bkg/14-Skill_Building-large.jpg",
+        "assets/images/bkg/15-Youth_Voice_Leadership-large.jpg",
+        "assets/images/bkg/16-Healthy_Choice_Behavior-large.jpg",
+        "assets/images/bkg/17-Work_Group_Process-large.jpg",
+        "assets/images/bkg/19-Last-large.jpg",
+        "assets/images/bkg/intro-large.jpg"
+
+      )
+     
+  </script>
+</div>
+
+ 
+
+
+
+
+    <script src="assets/js/material-components-web.js"></script>
+    
+
+
+
+    <script>
+      var drawerEl = document.querySelector('.mdc-temporary-drawer');
+      var MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer;
+      var drawer = new MDCTemporaryDrawer(drawerEl);
+       document.querySelector('.demo-menu').addEventListener('click', function() {
+        drawer.open = true;
+      });
+      drawerEl.addEventListener('MDCTemporaryDrawer:open', function() {
+        console.log('Received MDCTemporaryDrawer:open');
+      });
+      drawerEl.addEventListener('MDCTemporaryDrawer:close', function() {
+        console.log('Received MDCTemporaryDrawer:close');
+      });
+
+
+    </script>
+
+
+    <script>
+
+
+      var drawerElo = document.querySelector('.mdc-temporary-drawer');
+      var MDCTemporaryDrawero = mdc.drawer.MDCTemporaryDrawero;
+      var drawero = new MDCTemporaryDrawer(drawerElo);
+      document.querySelector('.title-menu').addEventListener('click', function() {
+        drawero.open = true;
+      });
+      drawerElo.addEventListener('MDCTemporaryDrawero:open', function() {
+        console.log('Received MDCTemporaryDrawero:open');
+      });
+      drawerElo.addEventListener('MDCTemporaryDrawero:close', function() {
+        console.log('Received MDCTemporaryDrawero:close');
+      });
+
+
+
+
+    </script>
+
+
+    <script>
+      var menuEl = document.querySelector('#demo-menu');
+      var menu = new mdc.menu.MDCSimpleMenu(menuEl);
+      var toggle = document.querySelector('.toggle');
+      toggle.addEventListener('click', function() {
+        menu.open = !menu.open;
+      });
+    </script>
+
+
+
+
+
+
+    <script>
+      // Because we load our CSS via webpack, we need to ensure that all of the correct styles
+      // are applied before ripples are attached. Otherwise, ripples may use the computed styles of
+      // elements before our CSS is applied, leading to improper UX.
+      (function() {
+        var pollId = 0;
+        pollId = setInterval(function() {
+          var pos = getComputedStyle(document.querySelector('.mdc-button')).position;
+          if (pos === 'relative') {
+            init();
+            clearInterval(pollId);
+          }
+        }, 250);
+        function init() {
+          var btns = document.querySelectorAll('.mdc-button:not([data-demo-no-js])');
+          for (var i = 0, btn; btn = btns[i]; i++) {
+            mdc.ripple.MDCRipple.attachTo(btn);
+          }
+        }
+
+ 
+
+      })();
+    </script>
+
+
+
+    <script>
+      var determinates = document.querySelectorAll('.mdc-linear-progress');
+      for (var i = 0, determinate; determinate = determinates[i]; i++) {
+        var linearProgress = mdc.linearProgress.MDCLinearProgress.attachTo(determinate);
+        linearProgress.progress = 0.5;
+        if (determinate.dataset.buffer) {
+          linearProgress.buffer = 0.19;
+        }
+      }
+    </script>
+
+
+
+
+</body>
+
+
+</html>
