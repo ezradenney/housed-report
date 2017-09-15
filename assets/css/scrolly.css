@@ -1771,3 +1771,65 @@ font-weight: 700;
   background:none;
   height:93px;
 }
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+  #downloadA {
+  display:none !important;
+}
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+#downloadA {
+ 
+}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
+  #downloadA {
+
+}
+
+}
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+  #downloadB {
+  display:none !important;
+}
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+#downloadB {
+ 
+}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
+  #downloadB {
+
+}
+
+}
