@@ -991,7 +991,7 @@ header: "",
 Partnership for Children & Youth is a California-based non-profit organization that finds funding, partners, and solutions to help schools better serve students; and informs state and national public policy on education issues.
 <p>&nbsp;</p>
 
-<button class="mdc-button mdc-button--raised" data-demo-no-js style="width:60%;font-size:135%;font-weight:800; ">
+<button class="mdc-button mdc-button--raised" data-demo-no-js style="width:60%;font-size:135%;font-weight:800; " id="donate">
 Donate!
 </button>
 
