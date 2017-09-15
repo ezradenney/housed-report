@@ -8,6 +8,9 @@
     var slide = document.createElement("section");
     slide.className = "step";
     slide.setAttribute("id", "step-" + id);
+      var spanNode = document.createElement("span");
+      spanNode.className = "stepspan";
+      slide.appendChild(spanNode);
     return slide;
   }
 
