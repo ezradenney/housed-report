@@ -446,11 +446,11 @@ display: none;
 #titleCloser {
 
 background-color: rgba(56, 113, 193, .9);
-padding:24px;
+padding:18px;
 left: 0;
 text-transform: none !important;
 color: #fff;
-font-size: 18px;
+font-size: 14px;
 display: none;
 font-family: "HelveticaNeue",
 "Helvetica Neue",
@@ -478,11 +478,11 @@ z-index: 99997;
 #titleCloser {
 
 background-color: rgba(56, 113, 193, .9);
-padding:36px;
+padding:28px;
 left: 0;
 text-transform: none !important;
 color: #fff;
-font-size: 20px;
+font-size: 18px;
 display: none;
 font-family: "HelveticaNeue",
 "Helvetica Neue",
@@ -510,11 +510,11 @@ z-index: 99997;
 #titleCloser {
 
 background-color: rgba(56, 113, 193, .9);
-padding:42px;
+padding:28px;
 left: 0;
 text-transform: none !important;
 color: #fff;
-font-size: 20px;
+font-size: 18px;
 display: none;
 font-family: "HelveticaNeue",
 "Helvetica Neue",
