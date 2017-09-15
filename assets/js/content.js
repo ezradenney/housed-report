@@ -970,7 +970,9 @@ header: "",
     body:`
             
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1HKqtPgbcLU?rel=0" frameborder="0" allowfullscreen></iframe>
+
 <p>&nbsp;</p>
+
 <h3 class='prog'>(510)830-4200</h3>
 
 <span><a href='http://www.partnerforchildren.org/housing' target='_blank'>www.partnerforchildren.org/housing</a></span>
@@ -984,6 +986,8 @@ header: "",
 <img src="assets/images/twitter.png" height="21" border="0" alt="facebook"></a>
 
 <br />
+<br />
+
 Partnership for Children & Youth is a California-based non-profit organization that finds funding, partners, and solutions to help schools better serve students; and informs state and national public policy on education issues.
 <p>&nbsp;</p>
 
