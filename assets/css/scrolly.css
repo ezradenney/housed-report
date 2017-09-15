@@ -607,7 +607,7 @@ polyline {
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .step {
-    margin-bottom: 96vh;
+    margin-bottom: 500px;
     font-family: "HelveticaNeue",
       "Helvetica Neue",
       'TeXGyreHerosRegular',
@@ -779,9 +779,6 @@ position: fixed;
    z-index: 9999999;
  }
  
- 
- 
-
 
 }
 
@@ -826,23 +823,6 @@ position: fixed;
 
 
 }
-
-
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
 
 
 /* Mobile Styles */
@@ -1010,15 +990,6 @@ background-color: #fff;
 
 
 
-
-
-
-
-
-
-
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 .topbar {
@@ -1141,34 +1112,6 @@ background-color: #fff;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
@@ -1238,24 +1181,6 @@ background-color: #fff;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1381,16 +1306,6 @@ vertical-align: bottom;
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1546,12 +1461,6 @@ vertical-align: top;
 
 
 }
-
-
-
-
-
-
 
 
 
