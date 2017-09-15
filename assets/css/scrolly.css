@@ -1854,3 +1854,11 @@ font-weight: 700;
   text-transform: uppercase;
 }
 
+.stepspan {
+
+  display: block;
+  position: relative;
+  width: 100%;
+  background:none;
+  height:66px;
+}
