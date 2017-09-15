@@ -437,17 +437,21 @@ display: none;
 
 }
 
+
+
+
+ /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
 #titleCloser {
 
 background-color: rgba(56, 113, 193, .9);
-padding:42px;
-
+padding:24px;
 left: 0;
 text-transform: none !important;
 color: #fff;
-font-size: 1.6em;
+font-size: 18px;
 display: none;
-
 font-family: "HelveticaNeue",
 "Helvetica Neue",
 'TeXGyreHerosRegular',
@@ -457,25 +461,88 @@ font-family: "HelveticaNeue",
 "Arial",
 sans-serif;
 font-weight: 400;
-
 margin-bottom: 0;
-top: 1.8em;
-
-
+top: 40px;
 text-align: left;
 line-height: 1.3em;
 position: fixed;
 width: 100%;
 z-index: 99997;
 }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+ 
+#titleCloser {
+
+background-color: rgba(56, 113, 193, .9);
+padding:36px;
+left: 0;
+text-transform: none !important;
+color: #fff;
+font-size: 20px;
+display: none;
+font-family: "HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;
+font-weight: 400;
+margin-bottom: 0;
+top: 40px;
+text-align: left;
+line-height: 1.3em;
+position: fixed;
+width: 100%;
+z-index: 99997;
+}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+#titleCloser {
+
+background-color: rgba(56, 113, 193, .9);
+padding:42px;
+left: 0;
+text-transform: none !important;
+color: #fff;
+font-size: 20px;
+display: none;
+font-family: "HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Helvetica",
+"Tahoma",
+"Geneva",
+"Arial",
+sans-serif;
+font-weight: 400;
+margin-bottom: 0;
+top: 40px;
+text-align: left;
+line-height: 1.3em;
+position: fixed;
+width: 100%;
+z-index: 99997;
+}
+
+}
+
+
+
+
 #titleCloser img {
 margin-right: 1em;
 min-width:150px;
 }
-
- 
- 
-
 
 .introimg {
 
