@@ -218,7 +218,7 @@ HousED is an initiative of the Partnership for Children &amp; Youth, working to 
           <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
           <a href="http://partnerforchildren.org/wp-content/uploads/2017/02/house-ed-standardsguide-final.pdf" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download" style="color:#fff !important; background-color:transparent !important; ">file_download</a>
           <div class="mdc-menu-anchor">
-          <a class="material-icons mdc-toolbar__icon toggle" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
+          <a class="material-icons mdc-toolbar__icon toggle" aria-label="Bookmark this page" alt="Bookmark this page" id="toggleon">more_vert</a>
           <div class="mdc-simple-menu" tabindex="-1" id="demo-menuo">
             <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" style="transform: scale(1, 1);">
               <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.069s;"><a href="//www.facebook.com/PartnerForChildren/">Facebook</a></li>
@@ -313,16 +313,12 @@ HousED is an initiative of the Partnership for Children &amp; Youth, working to 
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
-          <p>&nbsp;</p>
           <span id="scrollimg">
             <a href="#step-0" style="background: none !important; z-index: 9999999; ">
               <img src="assets/images/scrolldown.png" border="0" alt="Scroll Down For More" style="text-align: center; ">
             </a>
           </span>
         </section>
-
-
-
 
 
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
@@ -336,20 +332,30 @@ HousED is an initiative of the Partnership for Children &amp; Youth, working to 
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
 
-
-
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||| start noscript version of js output ||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
         <noscript>
 
- 
         </noscript>
 
-
-
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- ||||||||| end noscript          |||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
       </div>
+      
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- ||||||||||||| end sections ||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
       <!-- |||||||||||| The vis div that holds interactive goodies if there are any |||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
       <div id="vis" style="display:none; "></div>
 
@@ -359,6 +365,8 @@ HousED is an initiative of the Partnership for Children &amp; Youth, working to 
 
     </div>
   </div>
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+      <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//d3js.org/topojson.v1.min.js"></script>
@@ -510,10 +518,10 @@ images.onload = notify();
 
     <script>
       var menuElo = document.querySelector('#demo-menuo');
-      var menu = new mdc.menu.MDCSimpleMenu(menuElo);
-      var toggleo = document.querySelector('.toggle');
-      toggle.addEventListener('click', function() {
-        menu.open = !menu.open;
+      var menuo = new mdc.menu.MDCSimpleMenu(menuElo);
+      var toggleo = document.querySelector('#toggleon');
+      toggleo.addEventListener('click', function() {
+        menuo.open = !menuo.open;
       });
     </script>  
 
