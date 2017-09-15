@@ -969,22 +969,22 @@ header: "",
 
     body:`
             
-
-                        <button class="mdc-button mdc-button--raised" data-demo-no-js style="width:60%;font-size:135%;font-weight:800;margin-left:25%; ">
-              Donate!
-            </button>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
- </span>
-<span><a href='http://www.partnerforchildren.org/housing' target='_blank'>www.partnerforchildren.org/housing</a></span>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1HKqtPgbcLU?rel=0" frameborder="0" allowfullscreen></iframe>
 <h3 class='prog'>(510)830-4200</h3>
+<span><a href='http://www.partnerforchildren.org/housing' target='_blank'>www.partnerforchildren.org/housing</a></span>
               <a href="//www.facebook.com/PartnerForChildren/" class="social-icon" aria-label="Facebook" alt="Facebook">
 <img src="assets/images/facebook-box.png" height="21" border="0" alt="facebook"></a>
           
 
               <a href="//www.twitter.com/partnr4childrn" class="social-icon" aria-label="Facebook" alt="Facebook">
 <img src="assets/images/twitter.png" height="21" border="0" alt="facebook"></a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<button class="mdc-button mdc-button--raised" data-demo-no-js style="width:60%;font-size:135%;font-weight:800;margin-left:25%; ">
+Donate!
+</button>
 
 
  `
