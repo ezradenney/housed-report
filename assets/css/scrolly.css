@@ -1805,7 +1805,8 @@ font-weight: 700;
 @media only screen and (min-width: 961px) {
   
   #downloadA {
-
+    top: 0;
+    padding-top: 4px;
 }
 
 }
