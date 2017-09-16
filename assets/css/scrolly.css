@@ -1676,6 +1676,11 @@ padding: 10px 12px !important;
 /* height: 85px !important; */ 
 }
 
+.mdc-toolbar__icon:last-of-type {
+    height: 40px;
+    padding-right: 16px;
+    padding-top: 6px !important;
+}
 
 .mdc-temporary-drawer
 {
